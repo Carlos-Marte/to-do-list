@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title and icon -->
-    <title>To do List | 10-09-22</title>
+    <title>To do List | Práctica</title>
     <link rel="icon" href="./images/icon32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="./images/icon96x96.png" type="image/png" sizes="96x96">
 
@@ -35,6 +35,34 @@
 </head>
 
 <body>
+
+    <main class="main">
+        <section class="container">
+            <div class="container__header">
+                <h1 class="container__h1">To do List</h1>
+                <div class="container__inputs">
+                    <input type="text" placeholder="Tarea" minlength="5" autofocus id="input-text" class="container__input">
+                    <button id="add-button">
+                        <i class="fa-solid fa-circle-plus"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container__flex-items">
+                <div class="container__f-item">
+                    <input type="checkbox" name="#" id="input-checkbox">
+                    <p class="container__p">Aprender HTML</p>
+                    <button id="delete-button">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="container__footer">
+                <p id="p-pending-tasks" class="container__p container__p--footer">Tareas pendientes </p>
+                <p id="p-complete-tasks" class="container__p container__p--footer">Completadas </p>
+            </div>
+        </section>
+    </main>
+
 </body>
 
 </html>
