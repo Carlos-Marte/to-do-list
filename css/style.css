@@ -1,10 +1,118 @@
 :root {
-    font-family: 'Ubuntu', sans-serif; /*Font weight 400 & 700*/
+    font-family: 'Ubuntu', sans-serif;
+    /*Font weight 400, 500 & 700*/
 
     /* Colors */
-    --main-color: #D90429;
-    --second-color: #EF233C;
+    --main-color: #EF233C;
+    --second-color: #D90429;
     --main-text-color: #F8F9FA;
-    --secon-text-color: #EDF2F4;
+    --second-text-color: #EDF2F4;
     --gray-text-color: #343A40;
+}
+
+body {
+    background: var(--main-color);
+}
+
+.main {
+    width: 100%;
+}
+
+.container {
+    margin-top: 20%;
+    text-align: center;
+}
+
+/* Header */
+.container__h1 {
+    color: var(--main-text-color);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.container__inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.container__input {
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--second-text-color);
+    outline: none;
+    color: var(--main-text-color);
+}
+
+.container__input::placeholder {
+    color: var(--main-text-color);
+}
+
+.container__input::selection {
+    background: var(--gray-text-color);
+}
+
+.container__button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 22px;
+    color: var(--main-text-color);
+}
+
+/* Flex items */
+.container__flex-items {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.container__input--flex-item,
+.container__p,
+.container__button--delete {
+    display: inline-block;
+}
+
+.container__f-item {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: space-between;
+    background: var(--main-text-color);
+    color: var(--gray-text-color);
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.container__f-item-title-input {
+    flex-basis: 90%;
+}
+
+.container__input--flex-item,
+.container__button--delete {
+    margin: 0 10px;
+}
+
+.container__p {
+    font-weight: 500;
+}
+
+.container__button--delete {
+    font-size: 15px;
+    color: var(--gray-text-color);
+}
+
+/* Footer */
+
+.container__footer {
+    margin-top: 5%;
+}
+
+.container__p--footer {
+    color: var(--second-text-color);
 }
