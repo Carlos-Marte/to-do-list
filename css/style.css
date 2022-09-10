@@ -1,0 +1,9 @@
+:root {
+    font-family: 'Ubuntu', sans-serif; /*Font weight 400 & 700*/
+
+    /* Colors */
+    --main-color: #D90429;
+    --second-color: #EF233C;
+    --main-text-color: #F8F9FA;
+    --secon-text-color: #EDF2F4;
+}

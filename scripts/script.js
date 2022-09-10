@@ -1,0 +1,1 @@
+console.info("%cSCRIPT CARGADA", "color:lightgreen; font-weight: 700");
