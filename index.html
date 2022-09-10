@@ -25,7 +25,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 
     <!-- FontAwesome Icons -->
     <script src="https://kit.fontawesome.com/26950ebbfe.js" crossorigin="anonymous" defer></script>
@@ -42,23 +42,29 @@
                 <h1 class="container__h1">To do List</h1>
                 <div class="container__inputs">
                     <input type="text" placeholder="Tarea" minlength="5" autofocus id="input-text" class="container__input">
-                    <button id="add-button">
-                        <i class="fa-solid fa-circle-plus"></i>
+                    <button id="add-button" class="container__button">
+                        <i class="fa-solid fa-plus"></i>
                     </button>
                 </div>
             </div>
+            
             <div class="container__flex-items">
+
                 <div class="container__f-item">
-                    <input type="checkbox" name="#" id="input-checkbox">
-                    <p class="container__p">Aprender HTML</p>
-                    <button id="delete-button">
+                    <div class="container__f-item-title-input">
+                        <input type="checkbox" name="#" value="true" id="input-checkbox" class="container__input container__input--flex-item">
+                        <p class="container__p">Aprender HTML y CSS</p>
+                    </div>
+                    <button id="delete-button" class="container__button container__button--delete">
                         <i class="fa-solid fa-trash"></i>
                     </button>
                 </div>
+                
             </div>
+            
             <div class="container__footer">
-                <p id="p-pending-tasks" class="container__p container__p--footer">Tareas pendientes </p>
-                <p id="p-complete-tasks" class="container__p container__p--footer">Completadas </p>
+                <p id="p-pending-tasks" class="container__p container__p--footer">Tareas pendientes: 0</p>
+                <p id="p-complete-tasks" class="container__p container__p--footer">Completadas: 0</p>
             </div>
         </section>
     </main>
