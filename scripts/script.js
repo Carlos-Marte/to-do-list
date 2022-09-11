@@ -43,7 +43,12 @@ const createFlexItem = () => {
     deleteButton.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteButton.classList.add("container__button", "container__button--delete");
 
-    deleteButton.addEventListener('click', removeTask);
+    // deleteButton.addEventListener('click', removeTask);
+    deleteButton.addEventListener('click', () => {
+        divItemContainer.remove();
+        removeCompleteTasks();
+        removePendingTasks();
+    });
 
     divItemContainerTitleInput.append(inputCheckBox, taskText);
 
