@@ -68,13 +68,12 @@ const controlTasks = (event) => {
     return removeCompleteTasks();
 }
 
-// Remove Task
-const removeTask = (event) => {
-    event.target.parentElement.parentElement.remove();
-    removeCompleteTasks();
-    removePendingTasks();
-
-}
+// // Remove Task
+// const removeTask = (event) => {
+//     event.target.parentElement.parentElement.remove();
+//     removeCompleteTasks();
+//     removePendingTasks();
+// }
 
 // Add and Remove pending tasks
 const addPendingTasks = () => {
