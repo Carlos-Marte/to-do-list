@@ -116,3 +116,48 @@ body {
 .container__p--footer {
     color: var(--second-text-color);
 }
+
+
+/* Desktop view */
+
+@media only screen and (min-width: 1280px) {
+
+    .container__input {
+        padding: .5rem 1.5rem;
+    }
+
+    .container__button {
+        font-size: 25px;
+        transition: transform .1s ease-out;
+    }
+
+    .container__button:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+
+    .container__h1 {
+        font-size: 2.5rem;
+    }
+
+    .container {
+        margin-top: 10%;
+    }
+
+    .container__flex-items {
+        max-width: 1000px;
+        margin: 5% auto;
+    }
+
+    .container__button--delete:hover {
+        color: var(--second-color);
+    }
+
+    .container__input--flex-item:hover {
+        cursor: pointer;
+    }
+
+    .container__p {
+        font-size: 1.1rem;
+    }
+}
