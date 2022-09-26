@@ -12,5 +12,6 @@ realizado usando `<HTML>`, `<CSS>` y `<JS>`. Permite agregar tareas, tacharlas y
 ![To do list - tachando tarea](./readme-images/cap3.PNG "Tachando tarea")
 
 ![To do list - eliminando tarea](./readme-images/cap4.PNG "Eliminando tarea")
+---
 
 
